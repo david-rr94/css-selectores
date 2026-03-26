@@ -18,7 +18,7 @@
 
 /* 1. Selecciona los div que sean hijos directos de otro div */
 /* TU RESPUESTA ↓ */
-div > div
+
 {
   background-color: #ffd700;
   outline: 2px solid orange;
@@ -27,7 +27,7 @@ div > div
 
 /* 2. Selecciona el ÚLTIMO elemento li de un grupo de hermanos  */
 /* TU RESPUESTA ↓ */
-#lista-principal :last-child
+
 {
   background-color: #ff6b6b;
   color: white;
@@ -37,7 +37,7 @@ div > div
 /* 3. Selecciona los hijos PARES de un elemento li
       Pista: (even = par en inglés)           */
 /* TU RESPUESTA ↓ */
-#lista-principal :nth-child(even)
+
 {
   background-color: #74c0fc;
 }
@@ -46,7 +46,7 @@ div > div
 /* 4. Selecciona los hijos IMPARES de un elemento li
       Pista: (odd = impar en inglés)          */
 /* TU RESPUESTA ↓ */
-#lista-principal :nth-child(odd)
+
 {
   background-color: #b2f2bb;
 }
@@ -55,7 +55,7 @@ div > div
 /* 5. Selecciona los p que sean HIJOS DIRECTOS de article
       Ojo: no los nietos, solo los hijos directos (combinador >) */
 /* TU RESPUESTA ↓ */
-article > p
+
 {
   border-left: 4px solid #7950f2;
   padding-left: 8px;
@@ -65,7 +65,7 @@ article > p
 /* 6. Selecciona los p que estén DENTRO de un article
       (descendientes, no solo hijos directos → espacio entre)   */
 /* TU RESPUESTA ↓ */
-article p
+
 {
   font-style: italic;
 }
@@ -73,7 +73,7 @@ article p
 
 /* 7. Selecciona los h1 y los h3 a la vez. */
 /* TU RESPUESTA ↓ */
-h1, h3
+
 {
   text-decoration: underline;
   color: #e03131;
@@ -85,7 +85,7 @@ h1, h3
 /* 8. Selecciona los ol que estén DENTRO de body
       (descendientes de body)                                    */
 /* TU RESPUESTA ↓ */
-#lista-ordenada
+
 {
   background-color: #ffe8cc;
 }
@@ -94,7 +94,7 @@ h1, h3
 /* 9. Los ul que sean HIJOS DIRECTOS de body
       Diferencia clave: hijo directo vs descendiente            */
 /* TU RESPUESTA ↓ */
-body > ul
+
 {
   background-color: #d3f9d8;
   border: 2px dashed green;
@@ -103,7 +103,7 @@ body > ul
 
 /* 10. Los a que sean HIJOS DIRECTOS de p                       */
 /* TU RESPUESTA ↓ */
-p > a
+
 {
   color: #f03e3e;
   font-weight: bold;
@@ -113,7 +113,7 @@ p > a
 /* 11. Los div que sean DESCENDIENTES de body
        (casi todos los divs de la página lo serán)              */
 /* TU RESPUESTA ↓ */
-body div
+
 {
   /* Usa un outline para no romper el layout */
   outline: 1px dashed #aaa;
@@ -122,7 +122,7 @@ body div
 
 /* 12. El PRIMER hijo de body */
 /* TU RESPUESTA ↓ */
-body > :first-child
+
 {
   border-top: 4px solid #339af0;
 }
@@ -130,7 +130,7 @@ body > :first-child
 
 /* 13. El ÚLTIMO hijo de ul                                     */
 /* TU RESPUESTA ↓ */
-body > :last-child
+
 {
   font-weight: bold;
   color: #862e9c;
@@ -139,7 +139,7 @@ body > :last-child
 
 /* 14. El PRIMER hijo de ul                                     */
 /* TU RESPUESTA ↓ */
-ul > :first-child
+
 {
   font-weight: bold;
   color: #087f5b;
@@ -150,7 +150,7 @@ ul > :first-child
 
 /* 15. Los li PARES de ul */
 /* TU RESPUESTA ↓ */
-ul li:nth-child(2n)
+
 {
   background-color: #098ae6;
 }
@@ -158,7 +158,7 @@ ul li:nth-child(2n)
 
 /* 16. Los li IMPARES de ul                                     */
 /* TU RESPUESTA ↓ */
-ul li :nth-child(odd)
+
 {
   background-color: #fff9db;
 }
@@ -166,7 +166,7 @@ ul li :nth-child(odd)
 
 /* 17. El hijo de ul que esté en la POSICIÓN 3  */
 /* TU RESPUESTA ↓ */
-ul > :nth-child(3)
+
 {
   background-color: #ffd43b;
   font-weight: bold;
@@ -175,7 +175,7 @@ ul > :nth-child(3)
 
 /* 18. Un párrafo con la identificación "platano" */
 /* TU RESPUESTA ↓ */
-#platano
+
 {
   background-color: #fff3bf;
   border: 2px solid #ffd43b;
@@ -186,7 +186,7 @@ ul > :nth-child(3)
 /* 19. Un elemento con la clase "rojo" que sea PRIMER hijo
        Combina: selector de clase + pseudo-clase                */
 /* TU RESPUESTA ↓ */
-*.rojo:first-child
+
 {
   color: white;
   background-color: #e20606;
@@ -197,7 +197,7 @@ ul > :nth-child(3)
 
 /* 20. Seleccionar los h2 dentro de un section                  */
 /* TU RESPUESTA ↓ */
-section h2
+
 {
   color: #1864ab;
   border-bottom: 2px solid #1864ab;
@@ -206,7 +206,7 @@ section h2
 
 /* 21. Seleccionar el SEGUNDO hijo de section                   */
 /* TU RESPUESTA ↓ */
-section > :nth-child(2)
+
 {
   background-color: #886bd8;
 }
@@ -216,7 +216,7 @@ section > :nth-child(2)
 
 /* 22. Seleccionar los hijos PARES de un ol                     */
 /* TU RESPUESTA ↓ */
-ol > :nth-child(even)
+
 {
   background-color: #c3fae8;
 }
@@ -224,7 +224,7 @@ ol > :nth-child(even)
 
 /* 23. Seleccionar el ANTEPENÚLTIMO li de ul */
 /* TU RESPUESTA ↓ */
-ul li:nth-last-child(3)
+
 {
   background-color: #ff8787;
   color: white;
@@ -234,7 +234,7 @@ ul li:nth-last-child(3)
 /* 24. Seleccionar los p que tengan la clase "verde"
        y que sean HIJOS DIRECTOS de un div                      */
 /* TU RESPUESTA ↓ */
-div > p.verde
+
 {
   color: white;
   background-color: #2f9e44;
