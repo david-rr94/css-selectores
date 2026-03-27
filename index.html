@@ -6,55 +6,27 @@
   <title>Práctica de Selectores CSS</title>
   <link rel="stylesheet" href="selectores.css">
   <style>
-    /* ── ESTILOS BASE (no tocar) ─────────────────────────────────────────── */
-    body {
-      font-family: sans-serif;
-      background: #f0f0f0;
-      padding: 20px;
-    }
-    .seccion {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 24px;
-    }
-    .seccion h2 {
-      font-size: 14px;
-      color: #888;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin: 0 0 12px 0;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-    }
-    /* Los selectores de tus ejercicios añadirán estilos visibles sobre esto */
+    body { font-family: sans-serif; background: #f0f0f0; padding: 20px; }
+    .seccion { background: white; border: 1px solid #ccc; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+    .seccion > h2 { font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 12px 0; border-bottom: 1px solid #eee; padding-bottom: 6px; }
   </style>
 </head>
 <body>
 
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 1 – DIV > DIV  (ejercicios 1, 11)                            ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 1 – DIV > DIV (ej. 1, 11) -->
   <div class="seccion">
     <h2>Zona 1 – div dentro de div (ej. 1, 11)</h2>
-
     <div id="contenedor-padre">
       Soy el div padre
       <div id="hijo-div-1">Soy div HIJO de div (ej. 1 ✔)</div>
       <div id="hijo-div-2">Soy otro div HIJO de div (ej. 1 ✔)</div>
     </div>
-
-    <p>Este párrafo NO es un div, no lo selecciona el ej. 1</p>
+    <p>Este párrafo NO es un div</p>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 2 – LISTAS UL y LI (ej. 2, 3, 4, 13, 14, 15, 16, 17, 23)   ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 2 – LISTAS UL y LI (ej. 2, 3, 4, 13, 14, 15, 16, 17, 23) -->
   <div class="seccion">
     <h2>Zona 2 – ul y li (ej. 2, 3, 4, 13, 14, 15, 16, 17, 23)</h2>
-
     <ul id="lista-principal">
       <li>Elemento 1 (impar)</li>
       <li>Elemento 2 (par)</li>
@@ -64,7 +36,6 @@
       <li>Elemento 6 (par) ← penúltimo</li>
       <li>Elemento 7 (impar) ← último</li>
     </ul>
-
     <ul id="lista-secundaria">
       <li class="rojo">Li primero con clase rojo (ej. 19)</li>
       <li>Li segundo</li>
@@ -73,50 +44,33 @@
     </ul>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 3 – ARTICLE > P  (ej. 5, 6)                                  ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 3 – ARTICLE > P (ej. 5, 6) -->
   <div class="seccion">
     <h2>Zona 3 – article y p (ej. 5, 6)</h2>
-
     <article>
       <p>Párrafo HIJO DIRECTO de article (ej. 5 ✔ y ej. 6 ✔)</p>
       <p>Segundo párrafo hijo directo de article (ej. 5 ✔ y ej. 6 ✔)</p>
-      <div>
-        <p>Párrafo NIETO de article, no hijo directo (ej. 5 ✗, ej. 6 ✔)</p>
-      </div>
+      <div><p>Párrafo NIETO de article (ej. 5 ✗, ej. 6 ✔)</p></div>
     </article>
-
-    <p>Este párrafo NO está en article (ninguno lo selecciona)</p>
+    <p>Este párrafo NO está en article</p>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 4 – TÍTULOS H1, H2, H3 (ej. 7, 20, 21)                      ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 4 – TÍTULOS (ej. 7, 20, 21) -->
   <div class="seccion">
     <h2>Zona 4 – títulos (ej. 7, 20, 21)</h2>
-
     <h1>Título H1 principal (ej. 7 ✔)</h1>
     <h3>Título H3 (ej. 7 ✔)</h3>
     <h2>H2 fuera de section (ej. 20 ✗)</h2>
-
     <section id="seccion-titulos">
-      <!-- Ojo: el "segundo hijo" de section (ej. 21) depende de lo que pongas primero -->
       <h3>H3 primer hijo de section</h3>
       <h2>H2 SEGUNDO hijo de section (ej. 20 ✔, ej. 21 ✔)</h2>
       <p>Párrafo tercer hijo de section</p>
     </section>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 5 – OL (ej. 8, 22)                                           ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 5 – OL (ej. 8, 22) -->
   <div class="seccion">
     <h2>Zona 5 – ol (ej. 8, 22)</h2>
-
     <ol id="lista-ordenada">
       <li>Primero (impar)</li>
       <li>Segundo (par) ← ej. 22</li>
@@ -126,73 +80,178 @@
     </ol>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 6 – UL HIJO DIRECTO DE BODY (ej. 9)                         ║
-       ║  (Fuera de divs, justo dentro de body)                             ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 6 – UL HIJO DIRECTO DE BODY (ej. 9) -->
   <ul id="ul-hijo-body">
-    <li>Soy hijo de ul que es HIJO DIRECTO de body (ej. 9 ✔)</li>
+    <li>ul HIJO DIRECTO de body (ej. 9 ✔)</li>
     <li>Ídem</li>
   </ul>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 7 – A DENTRO DE P (ej. 10)                                   ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 7 – A DENTRO DE P (ej. 10) -->
   <div class="seccion">
     <h2>Zona 7 – enlaces en párrafos (ej. 10)</h2>
-
-    <p>
-      Este párrafo tiene un <a href="#">enlace hijo de p (ej. 10 ✔)</a>
-    </p>
+    <p>Este párrafo tiene un <a href="#">enlace hijo de p (ej. 10 ✔)</a></p>
     <a href="#">Este enlace NO está en un p (ej. 10 ✗)</a>
   </div>
 
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 8 – PRIMER Y ÚLTIMO HIJO DE BODY (ej. 12)                   ║
-       ║  El primer hijo real de body está al principio del body.            ║
-       ║  El último hijo real es el último elemento antes de </body>.        ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
-  <!-- 
-    NOTA para el alumno (ej. 12):
-    "El primer hijo de body" en ESTE HTML es el primer div.seccion.
-    Los comentarios HTML no cuentan como hijos en CSS.
-    Prueba con body > *:first-child
-  -->
-
-
-  <!-- ╔══════════════════════════════════════════════════════════════════════╗
-       ║  ZONA 9 – ID, CLASES Y SELECTORES ESPECIALES (ej. 18, 19, 24)     ║
-       ╚══════════════════════════════════════════════════════════════════════╝ -->
+  <!-- ZONA 9 – ID, CLASES (ej. 18, 19, 24) -->
   <div class="seccion">
     <h2>Zona 9 – id, clases especiales (ej. 18, 19, 24)</h2>
-
-    <!-- Ejercicio 18: párrafo con id "platano" -->
     <p id="platano">Soy el párrafo con id="platano" (ej. 18 ✔)</p>
-
-    <!-- Ejercicio 19: elemento con clase "rojo" que sea primer-hijo -->
-    <!-- Ya está en la lista-secundaria arriba: primer li tiene class="rojo" -->
     <div>
-      <span class="rojo">Span con clase "rojo" que es primer hijo de este div (ej. 19 ✔)</span>
-      <span class="rojo">Span con clase "rojo" que NO es primer hijo (ej. 19 ✗)</span>
+      <span class="rojo">Span clase "rojo" primer hijo (ej. 19 ✔)</span>
+      <span class="rojo">Span clase "rojo" NO primer hijo (ej. 19 ✗)</span>
     </div>
-
-    <!-- Ejercicio 24: p con clase "verde" que sea hijo directo de div -->
     <div id="zona-24">
-      <p class="verde">Párrafo verde, HIJO DIRECTO de div (ej. 24 ✔)</p>
-      <section>
-        <p class="verde">Párrafo verde dentro de section (NO hijo directo de div, ej. 24 ✗)</p>
-      </section>
-      <p class="verde">Otro párrafo verde, HIJO DIRECTO de div (ej. 24 ✔)</p>
+      <p class="verde">Párrafo verde HIJO DIRECTO de div (ej. 24 ✔)</p>
+      <section><p class="verde">Párrafo verde en section (ej. 24 ✗)</p></section>
+      <p class="verde">Otro párrafo verde HIJO DIRECTO de div (ej. 24 ✔)</p>
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════════════════
+       EJERCICIOS 25–42
+       ══════════════════════════════════════════════════ -->
 
-  <!-- Último elemento de body para practicar :last-child de body -->
+  <!-- ZONA 10 – A CON CLASE "grande" EN DIV (ej. 25) -->
+  <div class="seccion">
+    <h2>Zona 10 – enlaces con clase "grande" en div (ej. 25)</h2>
+    <div>
+      <a href="#" class="grande">Enlace clase "grande" hijo de div (ej. 25 ✔)</a>
+      <a href="#">Enlace SIN clase "grande" hijo de div (ej. 25 ✗)</a>
+    </div>
+    <a href="#" class="grande">Enlace clase "grande" FUERA de div (ej. 25 ✗)</a>
+  </div>
+
+  <!-- ZONA 11 – BUTTONS (ej. 26, 27, 30) -->
+  <div class="seccion">
+    <h2>Zona 11 – botones (ej. 26, 27, 30)</h2>
+
+    <section id="seccion-buttons">
+      <button>Button hijo de section (ej. 26 ✔)</button>
+      <button>Otro button hijo de section (ej. 26 ✔)</button>
+    </section>
+
+    <article id="articulo-unico">
+      <button>Button HIJO ÚNICO de article (ej. 27 ✔)</button>
+    </article>
+
+    <article id="articulo-multiple">
+      <button>Button NO es hijo único (ej. 27 ✗)</button>
+      <span>Hermano del button</span>
+    </article>
+
+    <div id="div-buttons">
+      <button>Button hijo de div (ej. 30 ✔)</button>
+      <button>Otro button hijo de div (ej. 30 ✔)</button>
+    </div>
+  </div>
+
+  <!-- ZONA 12 – SPAN PRIMER HIJO DE P (ej. 28) -->
+  <div class="seccion">
+    <h2>Zona 12 – span primer hijo de p (ej. 28)</h2>
+    <p><span>Span PRIMER HIJO de p (ej. 28 ✔)</span> texto después</p>
+    <p>Texto primero, luego <span>span NO primer hijo (ej. 28 ✗)</span></p>
+  </div>
+
+  <!-- ZONA 13 – INPUT DESPUÉS DE LABEL EN SECTION (ej. 29, 32) -->
+  <div class="seccion">
+    <h2>Zona 13 – inputs con label en section (ej. 29, 32)</h2>
+    <section id="seccion-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Input tras label en section (ej. 29 ✔)">
+      <br><br>
+      <label for="mascota">Mascota:</label>
+      <input type="text" id="mascota" placeholder="Input tras label[for=mascota] (ej. 29 ✔, 32 ✔)">
+    </section>
+    <br>
+    <label for="apellido">Apellido (fuera de section):</label>
+    <input type="text" id="apellido" placeholder="Input fuera de section (ej. 29 ✗)">
+    <br><br>
+    <label for="mascota">Otro label for="mascota" fuera de section (ej. 32 ✔)</label>
+  </div>
+
+  <!-- ZONA 14 – CLASES "Curvado" y "Recto" (ej. 35, 36) -->
+  <div class="seccion">
+    <h2>Zona 14 – clases Curvado y Recto (ej. 35, 36)</h2>
+    <p class="Curvado">Párrafo clase Curvado (ej. 35 ✔)</p>
+    <div class="Curvado">Div clase Curvado (ej. 35 ✔)</div>
+    <span class="Curvado">Span clase Curvado (ej. 35 ✔)</span>
+    <br><br>
+    <a href="#" class="Recto">Enlace clase Recto (ej. 36 ✔)</a>
+    <ol class="Recto">
+      <li>ol clase Recto (ej. 36 ✔)</li>
+    </ol>
+    <p class="Recto">Párrafo clase Recto (ej. 36 ✗, no es a ni ol)</p>
+  </div>
+
+  <!-- ZONA 15 – A DENTRO DE H2 DENTRO DE DIV (ej. 37) -->
+  <div class="seccion">
+    <h2>Zona 15 – a dentro de h2 dentro de div (ej. 37)</h2>
+    <div>
+      <h2>H2 con <a href="#">enlace en h2 en div (ej. 37 ✔)</a></h2>
+    </div>
+    <h2>H2 con <a href="#">enlace en h2 FUERA de div (ej. 37 ✗)</a></h2>
+  </div>
+
+  <!-- ZONA 16 – HIJOS DE SPAN EN P EN DIV (ej. 38) -->
+  <div class="seccion">
+    <h2>Zona 16 – hijos de span en p en div (ej. 38)</h2>
+    <div>
+      <p>
+        Texto y
+        <span>
+          <em>em hijo de span en p en div (ej. 38 ✔)</em>
+          <a href="#">a hijo de span en p en div (ej. 38 ✔)</a>
+        </span>
+      </p>
+    </div>
+    <p>
+      <span><em>em hijo de span en p FUERA de div (ej. 38 ✗)</em></span>
+    </p>
+  </div>
+
+  <!-- ZONA 17 – P Y .aviso EN DIV (ej. 39) -->
+  <div class="seccion">
+    <h2>Zona 17 – p y .aviso dentro de div (ej. 39)</h2>
+    <div id="zona-39">
+      <p>Párrafo dentro de div (ej. 39 ✔)</p>
+      <span class="aviso">Span .aviso dentro de div (ej. 39 ✔)</span>
+      <p>Otro párrafo dentro de div (ej. 39 ✔)</p>
+    </div>
+    <p>Párrafo FUERA de div (ej. 39 ✗)</p>
+    <span class="aviso">Span .aviso FUERA de div (ej. 39 ✗)</span>
+  </div>
+
+  <!-- ZONA 18 – EM Y A HIJOS DE P#Sons (ej. 40) -->
+  <div class="seccion">
+    <h2>Zona 18 – em y a hijos de p#Sons (ej. 40)</h2>
+    <p id="Sons">
+      <em>em hijo directo de p#Sons (ej. 40 ✔)</em>
+      texto
+      <a href="#">a hijo directo de p#Sons (ej. 40 ✔)</a>
+      <span><em>em dentro de span, no hijo directo (ej. 40 ✗)</em></span>
+    </p>
+    <p><em>em en p sin id Sons (ej. 40 ✗)</em></p>
+  </div>
+
+  <!-- ZONA 19 – .basico y .lolito (ej. 41, 42) -->
+  <div class="seccion">
+    <h2>Zona 19 – .basico y .lolito (ej. 41, 42)</h2>
+    <div class="basico">
+      <a href="#">Enlace dentro de .basico (ej. 41 ✔)</a>
+      <p><a href="#">Enlace en p dentro de .basico (ej. 41 ✔)</a></p>
+    </div>
+    <a href="#">Enlace FUERA de .basico (ej. 41 ✗)</a>
+    <div class="lolito">
+      <h2>H2 dentro de .lolito (ej. 42 ✔)</h2>
+      <p>Párrafo dentro de .lolito (ej. 42 ✗)</p>
+      <h2>Otro H2 dentro de .lolito (ej. 42 ✔)</h2>
+    </div>
+    <h2>H2 FUERA de .lolito (ej. 42 ✗)</h2>
+  </div>
+
   <footer id="pie">
-    <p>Pie de página – útil para practicar :last-child en body</p>
+    <p>Pie de página</p>
   </footer>
 
 </body>

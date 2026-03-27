@@ -242,8 +242,6 @@ div > p.verde
   border-radius: 4px;
 }
 
-
-
 /* ============================================================
    EJERCICIOS 25–42 → pendientes (próxima clase)
    ============================================================ */
@@ -251,19 +249,19 @@ div > p.verde
 /* ── BLOQUE 5 (ejercicios 25–30) ────────────────────────────── */
 
 /* 25. Los a que sean hijos de div y tengan un atributo class
-       que contenga la palabra "grande"
-       Pista: selector de atributo → [class~="grande"]          */
+       que contenga la palabra "grande"  */
 /* TU RESPUESTA ↓ */
-
+div > a[class*=”grande”]
 {
   background-color: #ffd700;
   font-weight: bold;
+  color: black
 }
 
 
 /* 26. Los button que sean hijos de un section                  */
 /* TU RESPUESTA ↓ */
-
+section > button
 {
   background-color: #74c0fc;
   border: none;
@@ -272,9 +270,9 @@ div > p.verde
 
 
 /* 27. Los button que sean hijos únicos
-       Pista: :only-child                                       */
+                                     */
 /* TU RESPUESTA ↓ */
-
+button:only-child
 {
   background-color: #b2f2bb;
   border: 2px solid green;
@@ -283,7 +281,7 @@ div > p.verde
 
 /* 28. Los span que sean primeros hijos de un p                 */
 /* TU RESPUESTA ↓ */
-
+p > span
 {
   background-color: #ffa94d;
   padding: 2px 6px;
@@ -294,7 +292,7 @@ div > p.verde
        y además sean hijos de un section
        Pista: el combinador hermano adyacente es  +             */
 /* TU RESPUESTA ↓ */
-
+section > label + input 
 {
   border: 2px solid #7950f2;
   outline: none;
@@ -303,7 +301,7 @@ div > p.verde
 
 /* 30. Los button que tengan como padre un div                  */
 /* TU RESPUESTA ↓ */
-
+div > button
 {
   background-color: #ff6b6b;
   color: white;
@@ -314,19 +312,17 @@ div > p.verde
 
 /* ── BLOQUE 6 (ejercicios 31–36) ────────────────────────────── */
 
-/* 31. Penúltimo hijo de body
-       Pista: :nth-last-child(2)                                */
+/* 31. Penúltimo hijo de body  */
 /* TU RESPUESTA ↓ */
-
+body > :nth-last-child(2)
 {
-  border: 3px solid #f03e3e;
+  border: 3px solid #7950f2;
 }
 
 
-/* 32. Todos los label con el atributo for="mascota"
-       Pista: selector de atributo → [for="mascota"]            */
+/* 32. Todos los label con el atributo for="mascota"  */
 /* TU RESPUESTA ↓ */
-
+label[for="mascota"]
 {
   color: #e67700;
   font-weight: bold;
@@ -335,7 +331,7 @@ div > p.verde
 
 /* 33. Todos los img con la clase "clasec" dentro de cualquier div */
 /* TU RESPUESTA ↓ */
-
+div img.clasec
 {
   border: 3px solid #862e9c;
 }
@@ -343,7 +339,7 @@ div > p.verde
 
 /* 34. Todos los enlaces dentro de párrafos                     */
 /* TU RESPUESTA ↓ */
-
+p a
 {
   color: #1864ab;
   text-decoration: underline;
@@ -353,7 +349,7 @@ div > p.verde
 /* 35. Todos los elementos que tengan la clase "Curvado"
        Ojo: CSS distingue mayúsculas en nombres de clase        */
 /* TU RESPUESTA ↓ */
-
+.Curvado
 {
   border-radius: 20px;
   background-color: #ffd43b;
@@ -363,7 +359,7 @@ div > p.verde
 
 /* 36. Todos los elementos a y ol que tengan la clase "Recto"   */
 /* TU RESPUESTA ↓ */
-
+a.Recto, ol.Recto /* a,ol.Recto */
 {
   outline: 3px solid #f03e3e;
 }
@@ -373,7 +369,7 @@ div > p.verde
 
 /* 37. Todos los a dentro de h2 dentro de div                   */
 /* TU RESPUESTA ↓ */
-
+div h2 a
 {
   color: #2f9e44;
   font-weight: bold;
@@ -382,7 +378,7 @@ div > p.verde
 
 /* 38. Todos los hijos de span dentro de p dentro de div        */
 /* TU RESPUESTA ↓ */
-
+div p span > *
 {
   background-color: #d0bfff;
   padding: 2px 4px;
@@ -393,7 +389,7 @@ div > p.verde
        que estén dentro de div
        Pista: selector de grupo con contexto                    */
 /* TU RESPUESTA ↓ */
-
+p, div *.aviso
 {
   background-color: #ffe8cc;
   padding: 4px;
@@ -402,7 +398,7 @@ div > p.verde
 
 /* 40. Los em y a que sean hijos DIRECTOS de p cuyo id sea "Sons" */
 /* TU RESPUESTA ↓ */
-
+p#Sons > em , p#Sons > a
 {
   background-color: #ff6b6b;
   color: white;
@@ -412,7 +408,7 @@ div > p.verde
 
 /* 41. Todos los a contenidos en .basico                        */
 /* TU RESPUESTA ↓ */
-
+.basico a
 {
   color: white;
   background-color: #1864ab;
@@ -423,7 +419,7 @@ div > p.verde
 
 /* 42. Todos los h2 dentro de la clase .lolito                  */
 /* TU RESPUESTA ↓ */
-
+.lolito h2
 {
   color: #862e9c;
   border-left: 4px solid #862e9c;
