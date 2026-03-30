@@ -250,6 +250,433 @@
     <h2>H2 FUERA de .lolito (ej. 42 ✗)</h2>
   </div>
 
+  <!-- ══════════════════════════════════════════════════
+       EJERCICIOS 43–63
+       ══════════════════════════════════════════════════ -->
+
+  <!-- ZONA 20 – ELEMENTOS DENTRO DE P (ej. 43, 44, 45) -->
+  <div class="seccion">
+    <h2>Zona 20 – elementos dentro de p (ej. 43, 44, 45)</h2>
+
+    <div id="div-zona20">
+      <p>
+        Texto con <span>span dentro de p (ej. 43 ✔, 44 ✔)</span>
+        y también <em>em dentro de p (ej. 43 ✔, 44 ✔)</em>
+        y un <a href="#">enlace dentro de p (ej. 43 ✔, 44 ✔)</a>
+      </p>
+    </div>
+
+    <!-- Ej. 45: span hijo DIRECTO de p -->
+    <p><span>Span HIJO DIRECTO de p (ej. 45 ✔)</span></p>
+    <p><em>Em primero</em><span>Span también hijo directo de p (ej. 45 ✔)</span></p>
+  </div>
+
+
+  <!-- ZONA 21 – LI EN P EN H1, P EN H1, P EN H2 (ej. 46, 48, 50) -->
+  <!-- NOTA: h1/h2 con p o li dentro es HTML inválido semánticamente
+       pero CSS lo selecciona igualmente. Se usa aquí solo para practicar. -->
+  <div class="seccion">
+    <h2>Zona 21 – combinaciones raras para practicar (ej. 46, 48, 50)</h2>
+
+    <div>
+      <h1>H1 con <p>párrafo dentro de h1 (ej. 48 ✔) con <li>li dentro de p dentro de h1 (ej. 46 ✔)</li></p></h1>
+      <h2>H2 con <p>párrafo hijo de h2 (ej. 50 ✔)</p></h2>
+    </div>
+  </div>
+
+
+  <!-- ZONA 22 – CLASE .transbox (ej. 47) -->
+  <div class="seccion">
+    <h2>Zona 22 – clase transbox (ej. 47)</h2>
+
+    <div class="transbox">Div con clase transbox (ej. 47 ✔)</div>
+    <div class="transbox otro">Div con clase transbox y otra clase (ej. 47 ✔)</div>
+    <div>Div SIN clase transbox (ej. 47 ✗)</div>
+  </div>
+
+
+  <!-- ZONA 23 – TODOS LOS LI, TODOS LOS A (ej. 49, 52) -->
+  <div class="seccion">
+    <h2>Zona 23 – todos los li, todos los a (ej. 49, 52)</h2>
+
+    <ul>
+      <li>Li dentro de ul (ej. 49 ✔)</li>
+      <li>Otro li (ej. 49 ✔)</li>
+    </ul>
+    <ol>
+      <li>Li dentro de ol (ej. 49 ✔)</li>
+    </ol>
+    <a href="#">Enlace suelto en la página (ej. 52 ✔)</a>
+  </div>
+
+
+  <!-- ZONA 24 – CLASE .libreConf (ej. 53, 54, 58) -->
+  <div class="seccion">
+    <h2>Zona 24 – clase .libreConf (ej. 53, 54, 58)</h2>
+
+    <div class="libreConf">
+      <p>Párrafo dentro de .libreConf (ej. 53 ✔, 54 ✔)</p>
+      <span>Span dentro de .libreConf (ej. 53 ✔, 54 ✗)</span>
+      <a href="#">Enlace dentro de .libreConf (ej. 53 ✔, 54 ✗)</a>
+    </div>
+
+    <h1 class="libreConf">H1 con clase .libreConf (ej. 58 ✔)</h1>
+    <h2 class="libreConf">H2 con clase .libreConf (ej. 58 ✔)</h2>
+    <h3 class="libreConf">H3 con clase .libreConf (ej. 58 ✔)</h3>
+    <p class="libreConf">P con clase .libreConf pero fuera de div (ej. 54 ✗)</p>
+  </div>
+
+
+  <!-- ZONA 25 – P EN H2 EN DIV, P EN #prueba1 (ej. 55, 56) -->
+  <div class="seccion">
+    <h2>Zona 25 – p en h2 en div, p en #prueba1 (ej. 55, 56)</h2>
+
+    <div>
+      <h2>H2 con <p>párrafo dentro de h2 dentro de div (ej. 55 ✔)</p></h2>
+    </div>
+
+    <div id="prueba1">
+      <p>Párrafo dentro de #prueba1 (ej. 56 ✔)</p>
+      <p>Otro párrafo dentro de #prueba1 (ej. 56 ✔)</p>
+    </div>
+  </div>
+
+
+  <!-- ZONA 26 – A HIJO DE P EN DIV (ej. 57) -->
+  <div class="seccion">
+    <h2>Zona 26 – a hijo de p en div (ej. 57)</h2>
+
+    <div>
+      <p><a href="#">Enlace hijo de p dentro de div (ej. 57 ✔)</a></p>
+      <p>Párrafo sin enlace</p>
+    </div>
+    <p><a href="#">Enlace hijo de p pero FUERA de div (ej. 57 ✗)</a></p>
+  </div>
+
+
+  <!-- ZONA 27 – P#parrafo1, A HIJOS DE P#hijos (ej. 59, 60) -->
+  <div class="seccion">
+    <h2>Zona 27 – ids párrafo1 e hijos (ej. 59, 60)</h2>
+
+    <p id="parrafo1">Párrafo con id="parrafo1" (ej. 59 ✔)</p>
+    <p id="parrafo2">Párrafo con id="parrafo2" (ej. 59 ✗)</p>
+
+    <p id="hijos">
+      <a href="#">Enlace hijo directo de p#hijos (ej. 60 ✔)</a>
+      texto
+      <a href="#">Otro enlace hijo directo de p#hijos (ej. 60 ✔)</a>
+      <span><a href="#">Enlace dentro de span, no hijo directo (ej. 60 ✗)</a></span>
+    </p>
+  </div>
+
+
+  <!-- ZONA 28 – LOS DOS PRIMEROS P, A.azul EN DIV#primero (ej. 62, 63) -->
+  <div class="seccion">
+    <h2>Zona 28 – dos primeros p, enlaces azul en #primero (ej. 62, 63)</h2>
+
+    <!-- Ej. 62: los dos primeros p de la página
+         Pista: :nth-of-type -->
+    <p>Primer párrafo de esta zona (para ej. 62)</p>
+    <p>Segundo párrafo de esta zona (para ej. 62)</p>
+    <p>Tercer párrafo (no debería seleccionarse en ej. 62)</p>
+
+    <!-- Ej. 63: a con clase "azul" dentro de div#primero -->
+    <div id="primero">
+      <a href="#" class="azul">Enlace clase azul en div#primero (ej. 63 ✔)</a>
+      <a href="#">Enlace SIN clase azul en div#primero (ej. 63 ✗)</a>
+    </div>
+    <div>
+      <a href="#" class="azul">Enlace clase azul fuera de div#primero (ej. 63 ✗)</a>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EJERCICIOS 64–82
+       ══════════════════════════════════════════════════ -->
+
+  <!-- ZONA 29 – CLASE holaKtal EN SPAN Y DIV (ej. 64) -->
+  <div class="seccion">
+    <h2>Zona 29 – clase holaKtal (ej. 64)</h2>
+    <span class="holaKtal">Span con clase holaKtal (ej. 64 ✔)</span>
+    <div class="holaKtal">Div con clase holaKtal (ej. 64 ✔)</div>
+    <p class="holaKtal">Párrafo con clase holaKtal (ej. 64 ✗, no es span ni div)</p>
+  </div>
+
+
+  <!-- ZONA 30 – LI CON ATRIBUTO h3 EN P HIJO DIRECTO DE DIV (ej. 65) -->
+  <div class="seccion">
+    <h2>Zona 30 – li[h3] en p hijo de div (ej. 65)</h2>
+    <div>
+      <p>
+        <li h3>Li con atributo h3 en p hijo directo de div (ej. 65 ✔)</li>
+        <li>Li SIN atributo h3 (ej. 65 ✗)</li>
+      </p>
+    </div>
+    <section>
+      <p>
+        <li h3>Li con atributo h3 pero NO hijo directo de div (ej. 65 ✗)</li>
+      </p>
+    </section>
+  </div>
+
+
+  <!-- ZONA 31 – IMPARES DE P, SPAN Y H3 EN DIV (ej. 66, 67) -->
+  <div class="seccion">
+    <h2>Zona 31 – impares de p, span y h3 en div (ej. 66, 67)</h2>
+
+    <p id="p-impares">
+      <span>Hijo 1 impar (ej. 66 ✔)</span>
+      <em>Hijo 2 par</em>
+      <span>Hijo 3 impar (ej. 66 ✔)</span>
+      <em>Hijo 4 par</em>
+      <span>Hijo 5 impar (ej. 66 ✔)</span>
+    </p>
+
+    <div id="div-67">
+      <span>Span dentro de div (ej. 67 ✔)</span>
+      <h3>H3 dentro de div (ej. 67 ✔)</h3>
+      <p>Párrafo dentro de div (ej. 67 ✗, no es span ni h3)</p>
+    </div>
+  </div>
+
+
+  <!-- ZONA 32 – TERCER A Y QUINTO P (ej. 68) -->
+  <div class="seccion">
+    <h2>Zona 32 – tercer a y quinto p (ej. 68)</h2>
+    <a href="#">Primer enlace de la página</a>
+    <a href="#">Segundo enlace</a>
+    <a href="#">Tercer enlace (ej. 68 ✔)</a>
+    <a href="#">Cuarto enlace</a>
+    <p>Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <p>Párrafo 3</p>
+    <p>Párrafo 4</p>
+    <p>Párrafo 5 (ej. 68 ✔)</p>
+    <p>Párrafo 6</p>
+  </div>
+
+
+  <!-- ZONA 33 – H1.rojo EN DIV, P.centrado, P EN H1.hola (ej. 69, 71, 72) -->
+  <div class="seccion">
+    <h2>Zona 33 – h1.rojo en div, p.centrado, p en h1.hola (ej. 69, 71, 72)</h2>
+
+    <div>
+      <h1 class="rojo">H1 clase rojo dentro de div (ej. 69 ✔)</h1>
+    </div>
+    <h1 class="rojo">H1 clase rojo FUERA de div (ej. 69 ✗)</h1>
+
+    <p class="centrado">Párrafo con clase centrado (ej. 71 ✔)</p>
+    <p>Párrafo SIN clase centrado (ej. 71 ✗)</p>
+
+    <h1 class="hola">H1 con clase hola con <p>párrafo dentro de h1.hola (ej. 72 ✔)</p></h1>
+    <h1>H1 SIN clase hola con <p>párrafo dentro de h1 sin clase (ej. 72 ✗)</p></h1>
+  </div>
+
+
+  <!-- ZONA 34 – ÚLTIMO HIJO DE DIV, TERCER A EN P (ej. 73, 74) -->
+  <div class="seccion">
+    <h2>Zona 34 – último hijo de div, tercer a en p (ej. 73, 74)</h2>
+
+    <div id="div-73">
+      <span>Primer hijo de div</span>
+      <span>Segundo hijo de div</span>
+      <span>Último hijo de div (ej. 73 ✔)</span>
+    </div>
+
+    <p id="p-74">
+      <a href="#">Primer enlace en p</a>
+      <a href="#">Segundo enlace en p</a>
+      <a href="#">Tercer enlace en p (ej. 74 ✔)</a>
+      <a href="#">Cuarto enlace en p</a>
+    </p>
+  </div>
+
+
+  <!-- ZONA 35 – H2#titulo, SEGUNDO P EN DIV, P A PARTIR DEL 3º (ej. 75, 76, 77) -->
+  <div class="seccion">
+    <h2>Zona 35 – h2#titulo, segundo p en div, p desde el 3º (ej. 75, 76, 77)</h2>
+
+    <h2 id="titulo">H2 con id titulo (ej. 75 ✔)</h2>
+    <h2>H2 SIN id titulo (ej. 75 ✗)</h2>
+
+    <div id="div-76">
+      <p>Primer p en div (ej. 76 ✗)</p>
+      <p>Segundo p en div (ej. 76 ✔)</p>
+      <p>Tercer p en div (ej. 76 ✗)</p>
+    </div>
+
+    <p>Párrafo 1 (ej. 77 ✗)</p>
+    <p>Párrafo 2 (ej. 77 ✗)</p>
+    <p>Párrafo 3 a partir de aquí (ej. 77 ✔)</p>
+    <p>Párrafo 4 (ej. 77 ✔)</p>
+    <p>Párrafo 5 (ej. 77 ✔)</p>
+  </div>
+
+
+  <!-- ZONA 36 – H1 HIJO DEL SEGUNDO P EN DIV, A.Buenas EN P#Nombre (ej. 78, 79) -->
+  <div class="seccion">
+    <h2>Zona 36 – h1 en segundo p de div, a.Buenas en p#Nombre (ej. 78, 79)</h2>
+
+    <div id="div-78">
+      <p>Primer p en div — <h1>H1 en primer p (ej. 78 ✗)</h1></p>
+      <p>Segundo p en div — <h1>H1 hijo directo del segundo p en div (ej. 78 ✔)</h1></p>
+    </div>
+
+    <p id="Nombre">
+      <a href="#" class="Buenas">Enlace clase Buenas en p#Nombre (ej. 79 ✔)</a>
+      <a href="#">Enlace SIN clase Buenas en p#Nombre (ej. 79 ✗)</a>
+    </p>
+    <p>
+      <a href="#" class="Buenas">Enlace clase Buenas en p sin id Nombre (ej. 79 ✗)</a>
+    </p>
+  </div>
+
+
+  <!-- ZONA 37 – TODOS H1, H2 EN DIV, PRIMER DIV DE SU TIPO, TODOS H3 (ej. 80, 81, 82) -->
+  <div class="seccion">
+    <h2>Zona 37 – h1 globales, h2 en div, primer div, todos h3 (ej. 80, 81, 82)</h2>
+
+    <h1>H1 en la página (ej. 80 ✔)</h1>
+    <h3>H3 en la página (ej. 82 ✔)</h3>
+
+    <div id="primer-div-tipo">
+      <h2>H2 dentro de div (ej. 80 ✔)</h2>
+      <h3>H3 dentro de div (ej. 82 ✔)</h3>
+    </div>
+
+    <h2>H2 FUERA de div (ej. 80 ✗)</h2>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EJERCICIOS 83–97
+       ══════════════════════════════════════════════════ -->
+
+  <!-- ZONA 38 – IMG EN P.Row, OL EN CUALQUIER COSA EN DIV (ej. 83, 84) -->
+  <div class="seccion">
+    <h2>Zona 38 – img en p.Row, ol en div (ej. 83, 84)</h2>
+
+    <p class="Row">
+      <img src="https://picsum.photos/60/40" alt="imagen en p.Row (ej. 83 ✔)">
+    </p>
+    <p>
+      <img src="https://picsum.photos/60/40" alt="imagen en p SIN clase Row (ej. 83 ✗)">
+    </p>
+
+    <div id="div-84">
+      <section>
+        <ol><li>ol dentro de section dentro de div (ej. 84 ✔)</li></ol>
+      </section>
+      <article>
+        <ol><li>ol dentro de article dentro de div (ej. 84 ✔)</li></ol>
+      </article>
+    </div>
+    <ol><li>ol FUERA de div (ej. 84 ✗)</li></ol>
+  </div>
+
+
+  <!-- ZONA 39 – SPAN, A Y DIV EN P, PRIMER HIJO .power EN .hype (ej. 85, 86) -->
+  <div class="seccion">
+    <h2>Zona 39 – span/a/div en p, primer hijo .power en .hype (ej. 85, 86)</h2>
+
+    <p id="p-85">
+      <span>Span en p (ej. 85 ✔)</span>
+      texto
+      <a href="#">Enlace en p (ej. 85 ✔)</a>
+      texto
+      <div>Div en p (ej. 85 ✔)</div>
+      <em>Em en p (ej. 85 ✗, no es span ni a ni div)</em>
+    </p>
+
+    <div class="hype">
+      <span class="power">Primer hijo con clase power en .hype (ej. 86 ✔)</span>
+      <span class="power">Segundo hijo con clase power en .hype (ej. 86 ✗)</span>
+    </div>
+    <section class="hype">
+      <p class="power">Primer hijo con clase power en otro .hype (ej. 86 ✔)</p>
+    </section>
+  </div>
+
+
+  <!-- ZONA 40 – OL GLOBALES, A EN P.hola, SEGUNDO HIJO DE P (ej. 87, 88, 89) -->
+  <div class="seccion">
+    <h2>Zona 40 – ol globales, a en p.hola, segundo hijo de p (ej. 87, 88, 89)</h2>
+
+    <ol id="ol-global-1"><li>ol global (ej. 87 ✔)</li></ol>
+
+    <p class="hola">
+      <a href="#">Enlace en p.hola (ej. 88 ✔)</a>
+    </p>
+    <p>
+      <a href="#">Enlace en p sin clase hola (ej. 88 ✗)</a>
+    </p>
+
+    <p id="p-89">
+      <span>Primer hijo de p</span>
+      <em>Segundo hijo de p (ej. 89 ✔)</em>
+      <a href="#">Tercer hijo de p</a>
+    </p>
+  </div>
+
+
+  <!-- ZONA 41 – ÚLTIMO HIJO DEL SEGUNDO P EN DIV, PRIMER Y ÚLTIMO HIJO DE DIV (ej. 90, 91) -->
+  <div class="seccion">
+    <h2>Zona 41 – último hijo del 2º p en div, primer/último hijo de div (ej. 90, 91)</h2>
+
+    <div id="div-90-91">
+      <p>Primer p en div —
+        <span>hijo 1</span>
+        <em>hijo 2</em>
+        <a href="#">hijo 3 — NO último del segundo p</a>
+      </p>
+      <p>Segundo p en div —
+        <span>hijo 1</span>
+        <em>hijo 2</em>
+        <a href="#">hijo 3 — último hijo del segundo p (ej. 90 ✔)</a>
+      </p>
+      <span>Primer hijo de div (ej. 91 ✔)</span>
+      <em>Hijo intermedio de div</em>
+      <a href="#">Último hijo de div (ej. 91 ✔)</a>
+    </div>
+  </div>
+
+
+  <!-- ZONA 42 – #c-header EN P EN DIV, TODOS P, IMG.loco (ej. 92, 93, 94) -->
+  <div class="seccion">
+    <h2>Zona 42 – #c-header en p en div, todos p, img.loco (ej. 92, 93, 94)</h2>
+
+    <div>
+      <p>
+        <span id="c-header">Span con id c-header en p en div (ej. 92 ✔)</span>
+      </p>
+    </div>
+    <p>
+      <span id="c-header">Span con id c-header en p FUERA de div (ej. 92 ✗)</span>
+    </p>
+
+    <img src="https://picsum.photos/60/40" class="loco" alt="imagen clase loco (ej. 94 ✔)">
+    <img src="https://picsum.photos/60/40" alt="imagen SIN clase loco (ej. 94 ✗)">
+  </div>
+
+
+  <!-- ZONA 43 – TERCER HIJO Y SEGUNDO A DE P, ÚLTIMO P, PRIMER Y ÚLTIMO P (ej. 95, 96, 97) -->
+  <div class="seccion">
+    <h2>Zona 43 – tercer hijo y 2º a de p, último p, primer y último p (ej. 95, 96, 97)</h2>
+
+    <p id="p-95">
+      <span>Primer hijo de p</span>
+      <a href="#">Primer enlace de p</a>
+      <em>Tercer hijo de p (ej. 95 ✔)</em>
+      <a href="#">Segundo enlace de p (ej. 95 ✔)</a>
+    </p>
+
+    <p>Párrafo intermedio A</p>
+    <p>Párrafo intermedio B</p>
+    <p id="ultimo-p">Último párrafo de la página (ej. 96 ✔, ej. 97 ✔)</p>
+  </div>
+
+
   <footer id="pie">
     <p>Pie de página</p>
   </footer>
