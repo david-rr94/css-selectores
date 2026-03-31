@@ -426,7 +426,536 @@ p#Sons > em , p#Sons > a
   padding-left: 8px;
 }
 
+/* ── BLOQUE 8 (ejercicios 43–49) ────────────────────────────── */
+
+/* 43. Todos los elementos dentro de un p                       */
+/* TU RESPUESTA ↓ */
+p *
+{
+  background-color: #ffd700;
+}
+
+
+/* 44. El selector que está dentro de un p que a su vez
+       está dentro de un div                                    */
+/* TU RESPUESTA ↓ */
+div p select
+{
+  color: #e03131;
+}
+
+
+/* 45. Seleccionar un span que sea hijo DIRECTO de un p         */
+/* TU RESPUESTA ↓ */
+p > span
+{
+  background-color: #74c0fc;
+  padding: 2px 6px;
+}
+
+
+/* 46. Seleccionar un li dentro de un p dentro de un h1         */
+/* TU RESPUESTA ↓ */
+h1 p li
+{
+  background-color: #b2f2bb;
+  padding: 2px 6px;
+}
+
+
+/* 47. Seleccionar todos los div que tienen la clase .transbox  */
+/* TU RESPUESTA ↓ */
+div.transbox
+{
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid #7950f2;
+}
+
+
+/* 48. Todos los p que están dentro de cualquier h1             */
+/* TU RESPUESTA ↓ */
+h1 p
+{
+  background-color: #ffa94d;
+  padding: 4px;
+}
+
+
+/* 49. Todos los li                                             */
+/* TU RESPUESTA ↓ */
+li
+{
+  border-left: 3px solid #339af0;
+}
+
+
+/* ── BLOQUE 9 (ejercicios 50–56) ────────────────────────────── */
+
+/* 50. Todos los p que son hijos de un h2                       */
+/* TU RESPUESTA ↓ */
+h2 > p
+{
+  background-color: #d0bfff;
+  padding: 4px;
+}
+
+
+/* 51. Todos los párrafos dentro de un div                      */
+/* TU RESPUESTA ↓ */
+div p
+{
+  border-bottom: 2px dashed #aaa;
+}
+
+
+/* 52. Todos los elementos a de la página                       */
+/* TU RESPUESTA ↓ */
+a
+{
+  font-style: italic;
+}
+
+
+/* 53. Todos los elementos dentro de la clase .libreConf        */
+/* TU RESPUESTA ↓ */
+.libreConf *
+{
+  background-color: #c3fae8;
+}
+
+
+/* 54. Todos los p dentro de la clase .libreConf                */
+/* TU RESPUESTA ↓ */
+.libreConf p
+{
+  background-color: #ff6b6b;
+  color: white;
+  padding: 4px;
+}
+
+
+/* 55. Todos los p dentro de h2 dentro de div                   */
+/* TU RESPUESTA ↓ */
+div h2 p
+{
+  background-color: #ffd43b;
+  padding: 4px;
+}
+
+
+/* 56. Todos los p contenidos en el id prueba1                  */
+/* TU RESPUESTA ↓ */
+#prueba1 p
+{
+  background-color: #339af0;
+  color: white;
+  padding: 4px;
+}
+
+
+/* ── BLOQUE 10 (ejercicios 57–63) ───────────────────────────── */
+
+/* 57. Todos los a que sean hijos de un p dentro de un div      */
+/* TU RESPUESTA ↓ */
+div p > a
+{
+  color: white;
+  background-color: #2f9e44;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
+/* 58. Todos los h1, h2 y h3 que tengan la clase .libreConf     */
+/* TU RESPUESTA ↓ */
+h1.libreConf, h2.libreConf, h3.libreConf
+{
+  text-decoration: underline;
+  color: #862e9c;
+}
+
+
+/* 59. Seleccionar el elemento p cuyo id sea "parrafo1"         */
+/* TU RESPUESTA ↓ */
+p#parrafo1
+{
+  background-color: #fff3bf;
+  border: 2px solid #ffd43b;
+  padding: 8px;
+}
+
+
+/* 60. Todos los a que sean hijos DIRECTOS de p cuyo id sea "hijos" */
+/* TU RESPUESTA ↓ */
+p#hijos > a
+{
+  background-color: #f03e3e;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+/* 61. Todos los p que estén dentro de un div                   */
+/* TU RESPUESTA ↓ */
+div p
+{
+  outline: 2px solid #339af0;
+}
+
+
+/* 62. Los dos primeros p */
+/* TU RESPUESTA ↓ */
+p:first-of-type, p:nth-of-type(2)
+{
+  background-color: #d3f9d8;
+  font-weight: bold;
+}
+
+
+/* 63. Todos los a con clase "azul" dentro de div con id "primero" */
+/* TU RESPUESTA ↓ */
+div#primero a.azul
+{
+  color: white;
+  background-color: #1864ab;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+
+/* ── BLOQUE 11 (ejercicios 64–70) ───────────────────────────── */
+
+/* 64. Todos los span y div que tengan la clase "holaKtal"      */
+/* TU RESPUESTA ↓ */
+span.holaKtal, div.holaKtal
+{
+  background-color: #ffd700;
+  padding: 4px 8px;
+}
+
+
+/* 65. Todos los li con el atributo "h3" dentro de los p
+       que sean hijos directos de div  */
+/* TU RESPUESTA ↓ */
+div > p li[h3]
+{
+  background-color: #74c0fc;
+  padding: 2px 6px;
+}
+
+
+/* 66. Todos los elementos impares de un p  */
+/* TU RESPUESTA ↓ */
+p > *:nth-child(2n+1)
+{
+  background-color: #b2f2bb;
+}
+
+
+/* 67. Selecciona los span y h3 dentro de un div                */
+/* TU RESPUESTA ↓ */
+div span, div h3
+{
+  background-color: #ffa94d;
+  padding: 2px 6px;
+}
+
+
+/* 68. Selecciona el tercer a y el quinto p      */
+/* TU RESPUESTA ↓ */
+a:nth-of-type(3), p:nth-of-type(5)
+{
+  background-color: #ff6b6b;
+  color: white;
+  padding: 2px 6px;
+}
+
+
+/* 69. Selecciona los h1 de la clase "rojo" dentro de un div    */
+/* TU RESPUESTA ↓ */
+div h1.rojo
+{
+  color: white;
+  background-color: #e03131;
+  padding: 4px 8px;
+}
+
+
+/* 70. Todos los elementos dentro de un p dentro de un div      */
+/* TU RESPUESTA ↓ */
+div p *
+{
+  outline: 2px solid #7950f2;
+}
+
+
+/* ── BLOQUE 12 (ejercicios 71–77) ───────────────────────────── */
+
+/* 71. Todos los p que tengan la clase .centrado                */
+/* TU RESPUESTA ↓ */
+p.centrado
+{
+  text-align: center;
+  background-color: #d0bfff;
+  padding: 4px;
+}
+
+
+/* 72. Todos los p dentro de un h1 que tenga la clase .hola     */
+/* TU RESPUESTA ↓ */
+h1.hola p
+{
+  background-color: #ffd43b;
+  padding: 4px;
+}
+
+
+/* 73. Los últimos hijos de div                                 */
+/* TU RESPUESTA ↓ */
+div > *:last-child
+{
+  border-bottom: 3px solid #339af0;
+}
+
+
+/* 74. El tercer a dentro de un p                               */
+/* TU RESPUESTA ↓ */
+p a:nth-of-type(3)
+{
+  background-color: #2f9e44;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+/* 75. Selecciona los h2 que tengan el id #titulo               */
+/* TU RESPUESTA ↓ */
+h2#titulo
+{
+  color: #862e9c;
+  border-bottom: 3px solid #862e9c;
+}
+
+
+/* 76. Selecciona el segundo p dentro de un div                 */
+/* TU RESPUESTA ↓ */
+div p:nth-of-type(2)
+{
+  background-color: #c3fae8;
+  padding: 4px;
+}
+
+
+/* 77. Selecciona los p a partir del tercero  */
+/* TU RESPUESTA ↓ */
+p:nth-of-type(n+3)
+{
+  background-color: #ffe8cc;
+  padding: 4px;
+}
+
+
+/* ── BLOQUE 13 (ejercicios 78–82) ───────────────────────────── */
+
+/* 78. Los h1 hijos directos del segundo p dentro de un div     */
+/* TU RESPUESTA ↓ */
+div p:nth-of-type(2) > h1
+{
+  background-color: #ff6b6b;
+  color: rgb(255, 255, 255);
+  padding: 4px 8px;
+}
+
+
+/* 79. Todos los a con clase "Buenas" en un p con id "Nombre" que sean hijos de
+ cualquier elemento. */
+/* TU RESPUESTA ↓ */
+* > p#nombre a.Buenas
+{
+  background-color: #1864ab;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+/* 80. Todos los h1 de la página y todos los h2 dentro de un div */
+/* TU RESPUESTA ↓ */
+div h1, div h2
+{
+  text-decoration: underline;
+  color: #e03131;
+}
+
+
+/* 81. Todos los div que sean los primeros de su tipo  */
+/* TU RESPUESTA ↓ */
+div:first-of-type
+{
+  outline: 3px solid #ffd43b;
+}
+
+
+/* 82. Todos los h3 de la página                                */
+/* TU RESPUESTA ↓ */
+h3
+{
+  color: #087f5b;
+  border-left: 4px solid #087f5b;
+  padding-left: 8px;
+}
+
+
+/* ── BLOQUE 14 (ejercicios 83–89) ───────────────────────────── */
+
+/* 83. Toda imagen dentro de un p de clase "Row"                */
+/* TU RESPUESTA ↓ */
+p.Row img
+{
+  border: 4px solid #f03e3e;
+  border-radius: 8px;
+}
+
+
+/* 84. Todos los ol dentro de cualquier elemento dentro de un div  */
+/* TU RESPUESTA ↓ */
+div * ol
+{
+  background-color: #d3f9d8;
+  padding: 4px;
+}
+
+
+/* 85. Todos los span, a y div dentro de cualquier p            */
+/* TU RESPUESTA ↓ */
+p span, p a, p div
+{
+  background-color: #ffd43b;
+  padding: 2px 4px;
+}
+
+
+/* 86. Todos los primeros hijos con clase "power"
+       dentro de cualquier elemento con clase "hype"            */
+/* TU RESPUESTA ↓ */
+*.hype  .power:first-child
+{
+  background-color: #862e9c;
+  color: white;
+  padding: 4px 8px;
+}
+
+
+/* 87. Todas las listas ordenadas de la página                  */
+/* TU RESPUESTA ↓ */
+ol
+{
+  border: 2px solid #339af0;
+  padding: 8px;
+}
+
+
+/* 88. Todos los enlaces dentro de un párrafo con clase .hola   */
+/* TU RESPUESTA ↓ */
+p.hola a
+{
+  color: white;
+  background-color: #2f9e44;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+/* 89. El segundo hijo de p                                     */
+/* TU RESPUESTA ↓ */
+p > *:nth-child(2)
+{
+  background-color: #ff6b6b;
+  color: white;
+  padding: 2px 6px;
+}
+
+
+/* ── BLOQUE 15 (ejercicios 90–97) ───────────────────────────── */
+
+/* 90. El último hijo del segundo p dentro de div               */
+/* TU RESPUESTA ↓ */
+div p:nth-of-type(2) > *:last-child 
+{
+  background-color: #ffd700;
+  font-weight: bold;
+}
+
+
+/* 91. El primer hijo y el último hijo de div   */
+/* TU RESPUESTA ↓ */
+div > *:first-child, div > *:last-child 
+{
+
+  outline: 3px solid #e03131;
+}
+
+
+/* 92. Selecciona el id #c-header dentro de p dentro de div     */
+/* TU RESPUESTA ↓ */
+div p *#c-header
+{
+  background-color: #7950f2;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+
+/* 93. Todos los p                                              */
+/* TU RESPUESTA ↓ */
+p
+{
+  border-left: 3px solid #aaa;
+  padding-left: 6px;
+}
+
+
+/* 94. Todas las imágenes con la clase "loco"                   */
+/* TU RESPUESTA ↓ */
+img.loco
+{
+  border: 4px solid #e03131;
+  border-radius: 50%;
+}
+
+
+/* 95. El tercer hijo de p y el segundo enlace de p */
+/* TU RESPUESTA ↓ */
+p > *nth-child(3), p a:nth-of-type(2)
+{
+  background-color: #ffd43b;
+  font-weight: bold;
+}
+
+
+/* 96. El último p */
+/* TU RESPUESTA ↓ */
+p:last-of-type
+{
+  background-color: #862e9c;
+  color: white;
+  padding: 8px;
+}
+
+
+/* 97. Seleccionar el primer y último párrafo
+       Pista: selector de grupo con :first-of-type y :last-of-type */
+/* TU RESPUESTA ↓ */
+p:first-of-type, p:last-of-type
+{
+  border: 3px solid #339af0;
+  padding: 8px;
+}
+
 
 /* ============================================================
-   EJERCICIOS 43–97 → pendientes
+   ¡ENHORABUENA! Has completado los 97 ejercicios de selectores
    ============================================================ */
